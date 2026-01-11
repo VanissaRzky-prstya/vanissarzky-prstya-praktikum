@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TUGAS PRAKTIKUM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>HTML5 Semantic</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><button onclick="showSection('home')">Home</button></li>
+      <li><button onclick="showSection('pengertian')">Pengertian</button></li>
+      <li><button onclick="showSection('kesimpulan')">Kesimpulan</button></li>
+    </ul>
+  </nav>
+
+  <main>      
+  <section id="home" class="active">
+    <h2>Home</h2>
+    <p>Assalamualaikum Wr.Wb hai semuanya </p> 
+    <p>Selamat datang di <b>TUGAS PRAKTIKUM<b> saya untuk modul 4</p>
+    <p>Halaman ini dibuat untuk belajar penggunaan elemen-elemen semantic di HTML5</p>
+    <p>Pada bagian ini berisi informasi singkat mengenai topik yang sedang dibahas yaitu Semantic HTML</p>
+    <p>disini saya belajar mengenal Div dan Span, dan konsep Semantic baik Non Simantic dan Simantic</p>
+  </section>
+
+  <section id="pengertian" class="content">
+    <h2>Pengertian</h2>
+    <p>Semantic HTML merupakan HTML dengan elemen-elemen yang menyatakan makna atau tujuan dari elemen itu sendiri</p> 
+    <p>Semantic HTML ini baru tersedia di HTML 5. Penggunaan Semantic HTML dapat menggantikan fungsi div dengan atributnya, 
+      sehingga baris kode jadi lebih ringkas.</p>
+    <p>Terdapat perbedaan utama antara semantik dan non-semantik adalah makna</p> 
+    <p>Elemen semantik secara jelas memberikan makna pada kontennya (misalnya, <nav> untuk navigasi)</p> 
+    <p>sedangkan elemen non-semantik tidak memberikan informasi makna, hanya berfungsi sebagai wadah umum (misalnya, <div>)</p>
+    <p>Keduanya adalah konsep dalam konteks pemrograman, khususnya dalam HTML. </p>
+  </section>
+
+  <section id="kesimpulan" class="content">
+    <h2>Kesimpulan</h2>
+    <p>Dari tugas ini saya jadi tahu kalau penggunaan tag semantic itu penting banget,apalagi kalau nanti bikin website yang lebih besar.</p> 
+    <p>tampilannya rapi, kodenya juga kelihatan lebih profesional.</p>
+  </section>
+  </main>
+
+  <footer>
+    <p>Copyright © 2025 Semantic HTML oleh Vanissa </p>
+  </footer>
+
+   <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
