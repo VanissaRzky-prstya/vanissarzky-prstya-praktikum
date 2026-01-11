@@ -1,0 +1,83 @@
+/* tata letak */
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main main"
+    "footer footer footer";
+  grid-template-rows: 80px 1fr 50px;
+  grid-template-columns: 20% 1fr 18%;
+  grid-gap: 5px;
+  margin: 10px;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+header { grid-area: header; }
+nav { grid-area: nav; }
+main { grid-area: main; }
+footer { grid-area: footer; }
+
+/* header */
+header {
+  background: #A6C8FF;
+  text-align: center;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* nav */
+nav {
+  background: #F9D5E5;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li { margin: 8px 0; }
+
+nav button {
+  width: 100%;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #FFE4F2;
+  color: #333;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #D9B2FF;
+}
+
+/* main dan section */
+main {
+  background: #F2F0FF;
+  border-radius: 12px;
+  padding: 17px;
+}
+
+.page { display: none; }
+.page.active { display: block; }
+
+/* footer */
+footer {
+  grid-column: 1 / -1;            /* biar meluas ke seluruh kolom grid */
+  background: #A6C8FF;            /* biru pastel */
+  text-align: center;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 14px;
+  color: #2E2E2E;
+  height: auto;                   /* tinggi menyesuaikan isi */
+  min-height: 50px;               /* minimal tinggi biar gak tipis */
+}
+
+
+
